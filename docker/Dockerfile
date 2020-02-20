@@ -13,7 +13,7 @@ RUN mkdir -p /opt && \
    
 
 
-ADD ../start-common.sh ../start-worker.sh ../start-master.sh /
+ADD /start-common.sh /start-worker.sh /start-master.sh /
 RUN chmod +x /start-common.sh /start-master.sh /start-worker.sh
 ENV PATH $PATH:/opt/spark/bin
 
