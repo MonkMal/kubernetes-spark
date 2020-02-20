@@ -10,7 +10,7 @@ RUN mkdir -p /opt && \
     
     ln -s spark-${spark_ver}-bin-hadoop2.7 spark && \
     echo Spark ${spark_ver} installed in /opt
-    cd .. && \
+    ls /
 
 
 ADD start-common.sh start-worker.sh start-master.sh /
