@@ -7,8 +7,10 @@ RUN mkdir -p /opt && \
     cd /opt && \
     curl https://archive.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz | \
         tar -zx && \
+    
     ln -s spark-${spark_ver}-bin-hadoop2.7 spark && \
     echo Spark ${spark_ver} installed in /opt
+    cd ..
 
 
 ADD start-common.sh start-worker.sh start-master.sh /
