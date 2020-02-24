@@ -13,7 +13,7 @@ RUN mkdir -p /opt && \
    
 
 
-ADD /docker/start-common.sh /docker/start-worker.sh /docker//start-master.sh /
+ADD /docker/start-common.sh /docker/start-worker.sh /docker/start-master.sh /
 RUN chmod +x /start-common.sh /start-master.sh /start-worker.sh
 ENV PATH $PATH:/opt/spark/bin
 
